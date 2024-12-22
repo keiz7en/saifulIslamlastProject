@@ -1,0 +1,117 @@
+/* Body and overall layout */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header customization */
+.custom-header {
+    background: linear-gradient(135deg, #6e7c7c, #4e586e);
+    color: white;
+    padding: 50px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.custom-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.custom-header .lead {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Navbar styling */
+.custom-navbar {
+    background-color: #343a40;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-navbar .navbar-brand {
+    font-size: 1.3rem;
+}
+
+/* Main content */
+main {
+    flex: 1;
+}
+
+.custom-input {
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.custom-btn {
+    padding: 12px 20px;
+    margin-left: 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #007bff;
+    color: white;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+#displayArea {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#displayArea .country-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#displayArea .country-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.country-card img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+.country-card h5 {
+    margin-top: 15px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.country-card p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Footer styling */
+.custom-footer {
+    background-color: #343a40;
+    color: white;
+    font-size: 1rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-footer p {
+    margin: 0;
+}
